@@ -1,16 +1,38 @@
 import Vue from 'vue';
-import Vuex from 'vuex';
+import Vuex, { MutationTree } from 'vuex';
 
 Vue.use(Vuex);
 
-export default new Vuex.Store({
-  state: {
+export enum MutationTypes {
+  UPDATE = 'UPDATE',
+}
 
+const state = {
+  tags: ['food', 'sport'],
+};
+
+export type State = typeof state;
+
+export interface Mutations<S = State> {
+  [MutationTypes.UPDATE](state: S, tags: string[]): void;
+}
+
+export const mutations: MutationTree<State> & Mutations = {
+  [MutationTypes.UPDATE](s, tags: string[]) {
+    s.tags = tags;
   },
-  mutations: {
+};
 
+export default new Vuex.Store({
+  state,
+  mutations: {
+    [MutationTypes.UPDATE](s, tags: string[]) {
+      s.tags = tags;
+    },
   },
   actions: {
-
+    updateTags: ({ commit }, tags: string[]) => {
+      commit('UPDATE', tags);
+    },
   },
 });

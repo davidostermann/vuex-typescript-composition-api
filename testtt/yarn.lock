@@ -998,13 +998,6 @@
   optionalDependencies:
     prettier "^1.18.2"
 
-"@vue/composition-api@^1.0.0-beta.3":
-  version "1.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@vue/composition-api/-/composition-api-1.0.0-beta.3.tgz#d1edc1c56ed01b3e862e9e8f61efed4df5701991"
-  integrity sha512-er8gDgHTH/cAZCInR77xufPwnUwkonrzBhDdwxODEnnDffd7AC6Zn7I5+o83lGQbUe97UxJQMlAXGUSs81pzUg==
-  dependencies:
-    tslib "^2.0.0"
-
 "@vue/preload-webpack-plugin@^1.1.0":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@vue/preload-webpack-plugin/-/preload-webpack-plugin-1.1.1.tgz#18723530d304f443021da2292d6ec9502826104a"
@@ -1479,13 +1472,6 @@ babel-plugin-module-resolver@3.2.0:
     pkg-up "^2.0.0"
     reselect "^3.0.1"
     resolve "^1.4.0"
-
-babel-preset-vca-jsx@^0.3.5:
-  version "0.3.5"
-  resolved "https://registry.yarnpkg.com/babel-preset-vca-jsx/-/babel-preset-vca-jsx-0.3.5.tgz#ff425b15247724c2f602f0b5017a00a32872765d"
-  integrity sha512-UUsTwaUDn2y/7x32dc2veBj4+mqjNOhcxMlHFA4EHZLLxlVWMEFhSYROStpBkmZBy38iw8qFN8+SB9RVlhQ68w==
-  dependencies:
-    "@babel/plugin-syntax-jsx" "^7.2.0"
 
 balanced-match@^1.0.0:
   version "1.0.0"
@@ -5816,11 +5802,6 @@ prettier@^1.18.2:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
   integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
 
-prettier@^2.0.5:
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.0.5.tgz#d6d56282455243f2f92cc1716692c08aa31522d4"
-  integrity sha512-7PtVymN48hGcO4fGjybyBSIWDsLU4H4XlvOHfq91pz9kkGlonzwTfYkaIEwiRg/dAJF9YlbsduBAgtYLi+8cFg==
-
 pretty-error@^2.0.2:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/pretty-error/-/pretty-error-2.1.1.tgz#5f4f87c8f91e5ae3f3ba87ab4cf5e03b1a17f1a3"
@@ -7060,11 +7041,6 @@ tslib@^1.8.0, tslib@^1.8.1, tslib@^1.9.0:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.13.0.tgz#c881e13cc7015894ed914862d276436fa9a47043"
   integrity sha512-i/6DQjL8Xf3be4K/E6Wgpekn5Qasl1usyw++dAA35Ue5orEn65VIxOA+YvNNl9HV3qv70T7CNwjODHZrLwvd1Q==
 
-tslib@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.0.0.tgz#18d13fc2dce04051e20f074cc8387fd8089ce4f3"
-  integrity sha512-lTqkx847PI7xEDYJntxZH89L2/aXInsyF2luSafe/+0fHOMjlBNXdH6th7f70qxLDhul7KZK0zC8V5ZIyHl0/g==
-
 tslint@^5.15.0:
   version "5.20.1"
   resolved "https://registry.yarnpkg.com/tslint/-/tslint-5.20.1.tgz#e401e8aeda0152bc44dd07e614034f3f80c67b7d"
@@ -7396,11 +7372,6 @@ vue@^2.6.10:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha512-VfPwgcGABbGAue9+sfrD4PuwFar7gPb1yl1UK1MwXoQPAw0BKSqWfoYCT/ThFrdEVWoI51dBuyCoiNU9bZDZxQ==
-
-vuex-composition-helpers@^1.0.18:
-  version "1.0.18"
-  resolved "https://registry.yarnpkg.com/vuex-composition-helpers/-/vuex-composition-helpers-1.0.18.tgz#62b50a6ec34885c113b825b18d9efbbe0ee28dfe"
-  integrity sha512-IM0CankybZn7rwm9EXQ13fG3w6c/zl89yOmrgI2CKd2dQIud53Hh73x48D++sV8ea9K530/vKyoAP5/drg1Ajg==
 
 vuex@^3.0.1:
   version "3.5.1"
