@@ -1,11 +1,11 @@
-import { ref, Ref } from '@vue/composition-api';
-import { useState, useActions } from 'vuex-composition-helpers';
+import { ref, Ref, computed, ComputedRef } from '@vue/composition-api';
+import store from '../store';
 
 function tagsFuncs() {
 
-    const { tags } = useState<{ tags: string[]}>(['tags']);
+    const tags: ComputedRef<string[]> = computed(() => store.state.tags);
 
-    const {updateTags} = useActions(['updateTags']);
+    const updateTags = (pTags: string[]) => store.dispatch('updateTags', pTags);
 
     const newTag = ref('');
 
@@ -18,16 +18,16 @@ function tagsFuncs() {
     };
 
     const addTag = () => {
-        if (newTag.value.trim().length === 0 || (tags as Ref<string[]>).value.includes(newTag.value)) {
+        if (newTag.value.trim().length === 0 || tags.value.includes(newTag.value)) {
             return;
         }
-        updateTags([...(tags as Ref<string[]>).value, newTag.value.trim()]);
+        updateTags([...tags.value, newTag.value.trim()]);
         newTag.value = '';
     };
 
     const handleBackspace = () => {
         if (newTag.value.length === 0) {
-            updateTags((tags as Ref<string[]>).value.slice(0, -1));
+            updateTags(tags.value.slice(0, -1));
         }
     };
 
